@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio of [NAMA KAMU] - Informatics Student at Universitas Muhammadiyah Surabaya.">
+    <meta name="author" content="[NAMA KAMU]">
+    <title>Izzam | Mahasiswa Informatika</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">&lt;<span>Izzam</span>/&gt;</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i data-feather="x"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-button" aria-label="Toggle theme">
+                    <i data-feather="sun" class="sun-icon"></i>
+                    <i data-feather="moon" class="moon-icon"></i>
+                </button>
+
+                <!-- Mobile Hamburger Toggle -->
+                <button class="nav__toggle" id="nav-toggle" aria-label="Open menu">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero section" id="home">
+            <div class="hero__container container grid">
+                <div class="hero__content">
+                    <span class="hero__badge">Available for projects & collaboration</span>
+                    <h1 class="hero__title">
+                        Hello, namaku <span class="highlight">M. Izzam Mursyidi</span>
+                    </h1>
+                    <h2 class="hero__subtitle">Mahasiswa Informatika</h2>
+                    <p class="hero__description">
+                        Aku mahasiswa Informatika di Universitas Muhammadiyah Surabaya, punya ketertarikan pada pemrograman, teknologi, dan membuat solusi digital yang bermanfaat.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#projects" class="btn btn-primary">Ini projectku! <i data-feather="arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-outline">Kontak saya</a>
+                    </div>
+                </div>
+
+                <div class="hero__image-wrapper">
+                    <div class="hero__blob">
+                        <img src="foto.jpg" alt="[NAMA KAMU] Profile Photo" class="hero__img">
+                    </div>
+                    <div class="hero__decoration">
+                        <span class="code-tag">&lt;code&gt; Python • JS • Web &lt;/code&gt;</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section__title">Tentangku</h2>
+                <span class="section__subtitle">Perkenalkan siapakah aku</span>
+
+                <div class="about__container grid">
+                    <div class="about__text">
+                        <p class="about__paragraph">
+                           Saya adalah mahasiswa tahun pertama Informatika di Universitas Muhammadiyah Surabaya. Saya tertarik pada pengembangan perangkat lunak, pemrograman, dan mengeksplorasi bagaimana teknologi bisa menyelesaikan masalah dunia nyata.
+                        </p>
+                        <p class="about__paragraph">
+                            Saat ini, saya sedang mengembangkan keterampilan saya dalam Python, HTML, CSS, dan JavaScript sambil terus belajar teknologi baru dan membangun proyek pribadi.
+                        </p>
+                    </div>
+
+                    <div class="about__info-cards grid">
+                        <div class="info-card">
+                            <i data-feather="book" class="info-card__icon"></i>
+                            <h3 class="info-card__title">University</h3>
+                            <p class="info-card__desc">Universitas Muhammadiyah Surabaya</p>
+                        </div>
+
+                        <div class="info-card">
+                            <i data-feather="terminal" class="info-card__icon"></i>
+                            <h3 class="info-card__title">Major</h3>
+                            <p class="info-card__desc">Informatics (Undergraduate)</p>
+                        </div>
+
+                        <div class="info-card">
+                            <i data-feather="calendar" class="info-card__icon"></i>
+                            <h3 class="info-card__title">Current Status</h3>
+                            <p class="info-card__desc">Mahasiswa Baru</p>
+                        </div>
+
+                        <div class="info-card">
+                            <i data-feather="compass" class="info-card__icon"></i>
+                            <h3 class="info-card__title">Interests</h3>
+                            <p class="info-card__desc">Software & Web Development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <h2 class="section__title">Keterampilan Teknis</h2>
+                <span class="section__subtitle">Teknologi inti yang saya praktikkan</span>
+
+                <div class="skills__container grid">
+                    <!-- Python -->
+                    <div class="skill__card">
+                        <div class="skill__icon-box">
+                            <i class="devicon-python-plain colored"></i>
+                        </div>
+                        <h3 class="skill__name">Python</h3>
+                        <span class="skill__level skill__level--intermediate">Intermediate</span>
+                        <p class="skill__desc">Logic building, scripting, and introductory computer science fundamentals.</p>
+                    </div>
+
+                    <!-- HTML5 -->
+                    <div class="skill__card">
+                        <div class="skill__icon-box">
+                            <i class="devicon-html5-plain colored"></i>
+                        </div>
+                        <h3 class="skill__name">HTML5</h3>
+                        <span class="skill__level skill__level--intermediate">Intermediate</span>
+                        <p class="skill__desc">Semantic structuring, accessibility compliance, and clean markup.</p>
+                    </div>
+
+                    <!-- CSS3 -->
+                    <div class="skill__card">
+                        <div class="skill__icon-box">
+                            <i class="devicon-css3-plain colored"></i>
+                        </div>
+                        <h3 class="skill__name">CSS3</h3>
+                        <span class="skill__level skill__level--learning">Learning</span>
+                        <p class="skill__desc">Responsive layouts with Flexbox/Grid, transitions, and CSS variables.</p>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="skill__card">
+                        <div class="skill__icon-box">
+                            <i class="devicon-javascript-plain colored"></i>
+                        </div>
+                        <h3 class="skill__name">JavaScript</h3>
+                        <span class="skill__level skill__level--beginner">Beginner</span>
+                        <p class="skill__desc">DOM manipulation, event handling, and ES6+ fundamental syntax.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education section" id="education">
+            <div class="container">
+                <h2 class="section__title">Education</h2>
+                <span class="section__subtitle">Academic path & background</span>
+
+                <div class="education__timeline">
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__year">2023 — 2026</span>
+                            <h3 class="timeline__title">Madrasah Aliyah Negeri 1 Gresik</h3>
+                            <p class="timeline__subtitle">Graduate Student</p>
+                            <p class="timeline__badge"> Gold Medal in Competition Science of PUSKANAS</p>
+                            <p class="timeline__text">
+                                Aktif dalam kompetisi dan organisasi, terutama menjadi wakil ketua organisasi Pondok Pesantren.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education__timeline">
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__year">2026 — Present</span>
+                            <h3 class="timeline__title">Universitas Muhammadiyah Surabaya</h3>
+                            <p class="timeline__subtitle">Program Studi Informatika</p>
+                            <p class="timeline__badge">First-Year Undergraduate Student</p>
+                            <p class="timeline__text">
+                                Actively learning algorithmic problem solving, modern programming paradigms, and software development fundamentals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <h2 class="section__title">Beberapa Projectku</h2>
+                <span class="section__subtitle">Selected works and learning experiments</span>
+
+                <div class="projects__container grid">
+                    <!-- Project 1 (Placeholder) -->
+                    <article class="project__card">
+                        <div class="project__img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="CLI Application Project" class="project__img">
+                        </div>
+                        <div class="project__content">
+                            <div class="project__tags">
+                                <span class="tag">Bot</span>
+                                <span class="tag">WhatsApp</span>
+                            </div>
+                            <h3 class="project__title">Bot WhatsApp</h3>
+                            <p class="project__desc">
+                                A simple command-line interface tool created to automate basic data processing tasks and practice Python modularity.
+                            </p>
+                            <div class="project__actions">
+                                <a href="https://github.com/itsuee/bot-wa" target="_blank" rel="noopener noreferrer" class="btn-text">
+                                    <i data-feather="external-link"></i> View Project
+                                </a>
+                                <a href="https://github.com/itsuee/bot-wa" target="_blank" rel="noopener noreferrer" class="btn-text">
+                                    <i data-feather="github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section__title">Mari Berteman!</h2>
+                <span class="section__subtitle">Butuh teman untuk berkolaborasi? Silahkan chat saya!!</span>
+
+                <div class="contact__container grid">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i data-feather="mail" class="contact__card-icon"></i>
+                            <div>
+                                <h3 class="contact__card-title">Email</h3>
+                                <a href="mailto:izzamgaming432@gmail.com" class="contact__card-link">izzamgaming432@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact__socials">
+                            <a href="https://github.com/itsuee" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="GitHub Profile">
+                                <i data-feather="github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="LinkedIn Profile">
+                                <i data-feather="linkedin"></i>
+                            </a>
+                            <a href="https://instagram.com/username" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="Instagram Profile">
+                                <i data-feather="instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form with Validation -->
+                    <form class="contact__form" id="contact-form" novalidate>
+                        <div class="form__group">
+                            <label for="name" class="form__label">Namamu</label>
+                            <input type="text" id="name" name="name" class="form__input" placeholder="e.g. John Doe" required>
+                            <span class="form__error-msg" id="name-error">Tolong masukkan nama kamu.</span>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="email" class="form__label">Emailmu</label>
+                            <input type="email" id="email" name="email" class="form__input" placeholder="e.g. john@example.com" required>
+                            <span class="form__error-msg" id="email-error">Tolong masukkan email yang valid.</span>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="message" class="form__label">Pesan</label>
+                            <textarea id="message" name="message" rows="5" class="form__input form__textarea" placeholder="Tulis pesanmu di sini..." required></textarea>
+                            <span class="form__error-msg" id="message-error">Tolong tulis pesanmu.</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Kirim Pesan</span>
+                            <i data-feather="send"></i>
+                        </button>
+                        <div class="form__status" id="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <p class="footer__copyright">&copy; 2026 M. Izzam Mursyidi. All Rights Reserved.</p>
+            <p class="footer__tagline">Designed & Developed with Passion.</p>
+        </div>
+    </footer>
+
+    <a href="#home" class="back-to-top" id="back-to-top" aria-label="Scroll back to top">
+        <i data-feather="arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
